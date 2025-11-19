@@ -11,10 +11,7 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0 # Allow SSH from anywhere (for demonstration, restrict in production)
-        - IpProtocol: tcp
-          FromPort: 80
-          ToPort: 80
-          CidrIp: 0.0.0.0/0 # Allow SSH from anywhere (for demonstration, restrict in production)
+      
       
   MyEC2Instance:
     Type: AWS::EC2::Instance
